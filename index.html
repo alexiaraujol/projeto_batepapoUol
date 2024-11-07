@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bate-Papo UOL</title>
+</head>
+<body>
+
+<header>
+    <nav class="topo"> 
+        <img src="img/62f625d9852515569aa51967d5654788.png" alt="logo-bp-uol">
+
+        <button class="bnt" onclick="abrirSidebar()"> 
+            <ion-icon name="people"></ion-icon>
+        </button>
+        
+    </nav>
+</header>
+
+<div class="sidebar escondido ">
+
+    <div class="fundo " onclick="abrirSidebar()" >
+    </div>
+
+
+        <div class ="menu">
+        
+            <div class="contatos">
+
+                <div class="titulo">
+                    <h2>Escolha um contato para enviar mensagem:</h2>
+                </div>
+
+                <div class="icone">
+                    <button class="t1">
+                        <ion-icon name="people"></ion-icon>
+                        <p>Todos</p>
+                    </button>
+                
+                    <div class="check">
+                        <ion-icon name="checkmark-sharp"></ion-icon>
+                    </div>
+                
+                </div>
+
+
+                <div class="participantes"></div>
+
+            </div>
+
+            
+            <div class="visibilidade">
+
+                <div class="titulo">
+                    <h2>Escolha a visibilidade:</h2>
+                </div>
+
+                <div class="icone">
+
+                    <button class="t1">
+                        <ion-icon name="lock-closed"></ion-icon>
+                        <p>Público</p>
+                    </button>
+                    
+                    <div class="check ">
+                        <ion-icon name="checkmark-sharp"></ion-icon>
+                    </div>
+                </div>
+                <div class="icone">
+
+                    <button class="t1">
+                        <ion-icon name="lock-open"></ion-icon>
+                        
+                        <p>Reservadamente</p>
+                    </button>
+                   
+                    <div class="check escondido ">
+                        <ion-icon name="checkmark-sharp"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+</div>
+
+<div class="container">
+
+    
+</div>
+
+<div class="baixo">
+
+    <div class="enviar-mensagem"> 
+        <input id="placeholder-text" type="text" placeholder="Escreva aqui... ">
+
+        
+
+        <div class="status">Enviando para Todos (público) </div>
+
+    </div>
+
+    
+        <button class="enviar" onclick="enviarMensagem()"> 
+            <ion-icon name="paper-plane-outline"></ion-icon>
+        </button>
+        
+
+    
+</div>
+
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
